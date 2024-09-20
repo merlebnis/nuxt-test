@@ -1,0 +1,114 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  max-width: 2000px;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+body.light-mode {
+  background-color: rgb(218, 245, 196);
+  color: rgb(35, 51, 78);
+}
+
+.dark-mode body {
+  background-color: rgb(4, 13, 36);
+  color: rgb(255, 255, 247);
+}
+
+.light-mode body {
+  background-color: rgb(218, 245, 196);
+  color: rgb(35, 51, 78);
+}
+
+body.dark-mode {
+  background-color: rgb(4, 13, 36);
+  color: rgb(255, 255, 247);
+}
+
+.div--fullwidth--beige *, .div--fullwidth--darkgreen *, .div--center {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.div--fullwidth--beige, .div--fullwidth--darkgreen {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.div--fullwidth--darkgreen {
+  background-color: rgb(60, 104, 60);
+  color: rgb(255, 255, 247);
+}
+
+.div--fullwidth--beige {
+  background-color: rgb(250, 243, 213);
+  color: rgb(35, 51, 78);
+}
+
+.dark-mode .div--block, .light-mode .div--block {
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 12px;
+}
+
+.light-mode .div--block {
+  background-color: rgb(255, 255, 247);
+}
+
+.dark-mode .div--block {
+  background-color: rgb(35, 51, 78);
+}
+
+.base_link {
+  padding-right: 1em;
+  float: right;
+  color: inherit;
+}
+
+.light-mode a:hover {
+  color: rgb(60, 104, 60);
+}
+
+.dark-mode a:hover {
+  color: rgb(218, 245, 196);
+}
+
+a:visited {
+  color: inherit;
+}
+
+.base_btn--frog, .base_btn--green {
+  border-radius: 12px;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+  text-decoration: none;
+  border: none;
+}
+
+.base_btn--green {
+  background-color: rgb(60, 104, 60);
+  color: rgb(255, 255, 247);
+}
+
+.base_btn--green:hover {
+  background-color: rgb(40, 66, 40);
+}
+
+.base_btn--frog {
+  background-color: rgb(144, 218, 40);
+  color: rgb(35, 51, 78);
+}
+
+.base_btn--frog:hover {
+  background-color: rgb(114, 174, 31);
+}/*# sourceMappingURL=main.css.map */

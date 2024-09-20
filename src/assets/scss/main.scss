@@ -1,0 +1,144 @@
+$accent-color--light:rgb(60, 104, 60);
+$accent-color--light--hover:rgb(40, 66, 40);
+$accent-color--dark:rgb(218, 245, 196);
+$accent-color--beige:rgb(250, 243, 213);
+$accent-color--frog:rgb(144, 218, 40);
+$accent-color--frog--hover:rgb(114, 174, 31);
+
+$background-color--light: rgb(218, 245, 196);
+$background-color--dark: rgb(4, 13, 36);
+$text-color--light:rgb(35, 51, 78);
+$text-color--dark:rgb(255, 255, 247);
+
+$radius:12px;
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    max-width: 2000px;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+body.light-mode{
+    background-color: $background-color--light;
+    color: $text-color--light;
+}
+
+.dark-mode body{
+    background-color: $background-color--dark;
+    color: $text-color--dark;
+}
+
+.light-mode body{
+    background-color: $background-color--light;
+    color: $text-color--light;
+}
+
+body.dark-mode{
+    background-color: $background-color--dark;
+    color: $text-color--dark;
+}
+
+%center {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.div--center{
+    @extend %center;
+}
+
+%base_fullwidth{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    *{
+        @extend %center;
+    }
+}
+
+.div--fullwidth--darkgreen{
+    @extend %base_fullwidth;
+    background-color: $accent-color--light;
+    color: $text-color--dark;
+}
+
+.div--fullwidth--beige{
+    @extend %base_fullwidth;
+    background-color: $accent-color--beige;
+    color: $text-color--light;
+}
+
+%base_block{
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: $radius;
+}
+
+.light-mode .div--block{
+    @extend %base_block;
+    background-color: $text-color--dark;
+}
+
+.dark-mode .div--block{
+    @extend %base_block;
+    background-color: $text-color--light;
+}
+
+.base_link{
+    padding-right: 1em;
+    float: right;
+    color: inherit;
+}
+
+.light-mode a:hover{
+    color: $accent-color--light;
+}
+
+.dark-mode a:hover{
+    color: $accent-color--dark;
+}
+
+a:visited{
+    color:inherit;
+}
+
+%base_btn {
+    border-radius: $radius;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    text-decoration: none;
+    border: none;
+}
+
+.base_btn--green{
+    @extend %base_btn;
+    background-color: $accent-color--light;
+    color: $text-color--dark;
+}
+
+.base_btn--green:hover{
+    background-color: $accent-color--light--hover;
+}
+
+.base_btn--frog{
+    @extend %base_btn;
+    background-color: $accent-color--frog;
+    color: $text-color--light;
+}
+
+.base_btn--frog:hover{
+    background-color: $accent-color--frog--hover;
+}
